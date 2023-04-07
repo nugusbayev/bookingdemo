@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+    <changeSet id="1" author="bookingapp">
+        <createTable tableName="PHONE">
+            <column autoIncrement="true" name="ID" startWith="1" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_PHONE"/>
+            </column>
+            <column name="BRAND" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DEVICE" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SERIAL_NUMBER" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="AVAILABLE" type="BOOLEAN" defaultValueBoolean="true">
+                <constraints nullable="false"/>
+            </column>
+            <column name="BOOKING_ID" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet id="2" author="bookingapp">
+        <addUniqueConstraint columnNames="SERIAL_NUMBER" constraintName="UC_PHONE_SERIAL_NUMBER" tableName="PHONE"/>
+    </changeSet>
+</databaseChangeLog>

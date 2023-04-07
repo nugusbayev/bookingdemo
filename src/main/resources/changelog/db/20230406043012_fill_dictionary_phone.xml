@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+    <changeSet id="1" author="bookingapp">
+        <insert tableName="PHONE">
+            <column name="BRAND" value="Samsung"/>
+            <column name="DEVICE" value="Galaxy S9"/>
+            <column name="SERIAL_NUMBER" value="0000opop-Samsung Galaxy S9"/>
+        </insert>
+        <insert tableName="PHONE">
+            <column name="BRAND" value="Samsung"/>
+            <column name="DEVICE" value="Galaxy S8"/>
+            <column name="SERIAL_NUMBER" value="0001opop-Samsung Galaxy S8"/>
+        </insert>
+        <insert tableName="PHONE">
+            <column name="BRAND" value="Samsung"/>
+            <column name="DEVICE" value="Galaxy S8"/>
+            <column name="SERIAL_NUMBER" value="0002opop-Samsung Galaxy S8"/>
+        </insert>
+        <insert tableName="PHONE">
+            <column name="BRAND" value="Motorola"/>
+            <column name="DEVICE" value="Nexus 6"/>
+            <column name="SERIAL_NUMBER" value="0003opop-Motorola Nexus 6"/>
+        </insert>
+        <insert tableName="PHONE">
+            <column name="BRAND" value="Oneplus"/>
+            <column name="DEVICE" value="9"/>
+            <column name="SERIAL_NUMBER" value="0004opop-Oneplus 9"/>
+        </insert>
+        <insert tableName="PHONE">
+            <column name="BRAND" value="Apple"/>
+            <column name="DEVICE" value="iPhone 13"/>
+            <column name="SERIAL_NUMBER" value="0005opop-Apple iPhone 13"/>
+        </insert>
+        <insert tableName="PHONE">
+            <column name="BRAND" value="Apple"/>
+            <column name="DEVICE" value="iPhone 12"/>
+            <column name="SERIAL_NUMBER" value="0006opop-Apple iPhone 12"/>
+        </insert>
+        <insert tableName="PHONE">
+            <column name="BRAND" value="Apple"/>
+            <column name="DEVICE" value="iPhone 11"/>
+            <column name="SERIAL_NUMBER" value="0007opop-Apple iPhone 11"/>
+        </insert>
+        <insert tableName="PHONE">
+            <column name="BRAND" value="Apple"/>
+            <column name="DEVICE" value="iPhone X"/>
+            <column name="SERIAL_NUMBER" value="0008opop-iPhone X"/>
+        </insert>
+        <insert tableName="PHONE">
+            <column name="BRAND" value="Nokia"/>
+            <column name="DEVICE" value="3310"/>
+            <column name="SERIAL_NUMBER" value="0009opop-Nokia 3310"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
