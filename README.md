@@ -8,6 +8,7 @@
 * SpringBoot - main framework
 * Liquibase - to manage database migrations
 * JPARepository - to make database requests
+* SWAGGER - to document API
 
 ### Entities
 * Phone - represents phone information, also stores availability flag
